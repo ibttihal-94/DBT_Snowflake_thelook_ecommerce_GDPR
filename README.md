@@ -1,9 +1,9 @@
-# 🚀 Marketing-to-Revenue Funnel Analytics  
+#  Marketing-to-Revenue Funnel Analytics  
 **Tech Stack:** Snowflake | dbt | Power BI | GitHub | SQL  
 
 ---
 
-## 🧭 Project Overview
+##  Project Overview
 This project demonstrates an end-to-end **modern analytics pipeline** for an e-commerce company (“TheLook / Milo Store”).  
 It shows how raw transactional data from multiple sources can be modeled, tested, and visualized to help executives answer key business questions such as:
 
@@ -14,7 +14,7 @@ It shows how raw transactional data from multiple sources can be modeled, tested
 
 ---
 
-## 🧱 Architecture
+##  Architecture
 ```text
 CSV / External Sources
         ↓
@@ -23,9 +23,12 @@ Snowflake (RAW Layer)
 dbt (STAGING → INTERMEDIATE → MARTS)
         ↓
 Power BI (Executive Dashboards)
+```text
+
 ---
 
-## 🎯 Executives & KPIs
+
+##  Executives & KPIs
 
 | Executive | Focus Area | Key Metrics |
 |------------|-------------|--------------|
