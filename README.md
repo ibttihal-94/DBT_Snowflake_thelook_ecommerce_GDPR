@@ -23,7 +23,7 @@ Snowflake (RAW Layer)
 dbt (STAGING → INTERMEDIATE → MARTS)
         ↓
 Power BI (Executive Dashboards)
-```text
+```
 
 ---
 
