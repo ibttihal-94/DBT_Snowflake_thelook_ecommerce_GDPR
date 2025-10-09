@@ -13,7 +13,7 @@ joined as (
     -- measures
     e.sale_price                   as unit_sale_price,
     e.inventory_cost               as unit_cost,
-    (e.sale_price)                 as line_revenue,         -- per item
+    (e.sale_price)                 as sale_price,         -- per item
     (e.inventory_cost)             as line_cost,
     (e.line_margin)                as line_margin,          -- already computed
 

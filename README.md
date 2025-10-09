@@ -65,7 +65,5 @@ All models follow a **star schema** for Power BI reporting, ensuring clear relat
 | **dbt Core** | Data transformation, testing, and modular SQL modeling |
 | **Power BI Desktop** | Executive dashboards and visual analytics |
 | **Git + GitHub** | Version control and portfolio publishing |
-| **Python (optional)** | Data validation and Snowflake automation |
-
 ---
 
