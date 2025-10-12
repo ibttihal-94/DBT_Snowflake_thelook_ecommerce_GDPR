@@ -8,6 +8,7 @@ joined as (
     e.order_id,
     e.user_id,
     e.product_id,
+    e.product_category,
     e.order_created_at::date       as date_day,
 
     -- measures
