@@ -1,9 +1,8 @@
 #  Marketing-to-Revenue Funnel Analytics  
 **Tech Stack:** Snowflake | dbt | Power BI | GitHub | SQL  
-## 📊 Lineage & Documentation
-
+## Lineage & Documentation
 Explore the interactive dbt Lineage Graph here:  
-👉 [View Lineage in dbt Cloud]( https://ibttihal-94.github.io/Marketing-Funnel-Snowflake-/)
+ [View Lineage in dbt Cloud]( https://ibttihal-94.github.io/Marketing-Funnel-Snowflake-/)
 ---
 
 ##  Project Overview
