@@ -3,7 +3,9 @@
 ## Lineage & Documentation
 
 **Explore the interactive dbt Lineage Graph here:**  
- [View Lineage in dbt Cloud]( https://ibttihal-94.github.io/Marketing-Funnel-Snowflake-/)
+ [View Lineage in dbt Cloud]( https://ibttihal-94.github.io/DBT_Snowflake_thelook_ecommerce/)
+ ![Lineage Preview](assets/Lineage.png)
+
 ---
 
 ##  Project Overview
@@ -27,18 +29,6 @@ dbt (STAGING → INTERMEDIATE → MARTS)
         ↓
 Power BI (Executive Dashboards)
 ```
-
----
-
-
-##  Executives & KPIs
-
-| Executive | Focus Area | Key Metrics |
-|------------|-------------|--------------|
-| **CEO** | Company growth & profitability | Revenue YoY %, Customer Growth %, Margin % |
-| **CMO** | Marketing funnel performance | View→Cart→Purchase %, Traffic Source ROI |
-| **CFO** | Financial control | Cost vs Revenue, Return Rate %, Average Order Value |
-| **COO** | Operations & fulfillment | Delivery Timeliness, Cancellations, Return Rate |
 
 ---
 
@@ -128,6 +118,21 @@ Sessions, carts, and purchases grow steadily through 2023.
 **Profitable scale:** Revenue and customers nearly doubled since 2020 while maintaining ~52% margin.
 
 **Balanced audience:** Gender spend is evenly split → broad market appeal.
+
+---
+---
+
+## 🛡️ Data Privacy & GDPR Compliance
+
+As this project models user-level and behavioral data (sessions, purchases, and funnel events), it follows **GDPR-aligned data handling principles** used by EU analytics teams:
+
+- **Data Minimization:** Only analytics-relevant attributes are modeled in dbt; personally identifiable information (PII) such as emails, addresses, and full names are excluded from Power BI outputs.
+- **Pseudonymization:** User identifiers (`user_id`) are stored as surrogate keys (`customer_sk`) to prevent direct identification.
+- **Purpose Limitation:** Data is processed exclusively for aggregated analytics, growth measurement, and marketing funnel optimization — not for profiling or direct marketing.
+- **Access Management:** The architecture separates *RAW → STAGING → MARTS* layers, ensuring only anonymized, aggregated marts feed executive dashboards.
+- **Right to Erasure & Access:** The schema supports easy deletion or retrieval of user data through `user_id` traceability from marts back to raw.
+
+By incorporating these principles, the project demonstrates how **modern analytics pipelines** can remain **compliant with EU GDPR** while still providing full-funnel visibility and actionable insights.
 
 ---
 ## Power BI Relationships (single-direction, dim → fact)

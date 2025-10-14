@@ -8,7 +8,7 @@ select
   browser,
   city,
   state,
-  postal_code,
+ -- postal_code,
   viewed,
   added_to_cart,
   purchased,

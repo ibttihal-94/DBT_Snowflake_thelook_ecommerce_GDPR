@@ -31,3 +31,5 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   thelook_funnel:  # must match your dbt_project.yml name
+vars:
+  pii_salt: "{{ env_var('PII_SALT') }}" 

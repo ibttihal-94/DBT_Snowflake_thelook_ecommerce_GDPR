@@ -1,7 +1,8 @@
 
 with ev as (
     select
-        coalesce(cast(user_id as varchar), concat('anon:', cast(session_id as varchar))) as visitor_id,
+        coalesce(cast(user_id as varchar), 
+        concat('anon:', cast(session_id as varchar))) as visitor_id,
         user_id,
         session_id,
         to_date(created_at)               as event_day,

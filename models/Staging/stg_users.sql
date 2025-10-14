@@ -2,7 +2,8 @@
 -- Staging table for users
 
 SELECT
-    id AS user_id,
+ {{ norm_user_id('id') }}              as user_id_raw,   -- raw, normalized (staging only)
+  {{ pseudonymize_user('id') }}         as user_id,  
     first_name,
     last_name,
     email,
